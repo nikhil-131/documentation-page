@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    line-height: 1.5;
+}
+
+.left {
+    width: 25%;
+    height: 100vh;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: visible;
+    text-wrap: wrap;
+}
+
+.left nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.left nav ul li {
+    border-top: 1px solid rgb(185, 185, 185);
+    padding: 1rem 0;
+}
+
+.left nav ul li:hover {
+    font-weight: 600;
+}
+
+.left nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.left nav {
+    position: relative;
+}
+
+.right {
+    width: 74%;
+    position: relative;
+    margin-left: 26%;
+}
+
+.right section code {
+    display: block;
+    background-color: #cecece;
+    padding: 0.7rem 0 0.7rem 0.5rem;
+    border-radius: 2px;
+    
+}
+
+pre {
+    white-space: pre-line;
+    line-height: 1.8;
+}
+
+ul li {
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .left {
+        display: none;
+    }
+
+    .right {
+        margin: auto;
+    }
+}
